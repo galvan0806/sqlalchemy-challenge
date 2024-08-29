@@ -5,7 +5,6 @@ from sqlalchemy import create_engine, func
 from flask import Flask, jsonify
 
 # Database Setup
-
 engine = create_engine("sqlite:///Resources/hawaii.sqlite")
 
 # Reflect existing database to new model
@@ -15,8 +14,8 @@ Base = automap_base()
 Base.prepare(engine, reflect=True)
 
 # Save references to each table
-Measurement = Base.classes.measurement
 Station = Base.classes.station
+Measurement = Base.classes.measurement
 
 # Flask setup
 app = Flask(__name__)
