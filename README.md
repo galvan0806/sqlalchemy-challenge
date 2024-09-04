@@ -10,3 +10,4 @@ In this section, you’ll use Python and SQLAlchemy to do a basic climate analys
 After completing the initial analysis, a design of a Flask API based on the queries previously is developed.  
 
 ## Resources 
+Module 10
